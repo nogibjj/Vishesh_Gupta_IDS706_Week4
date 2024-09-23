@@ -8,6 +8,6 @@ lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
 test:
-	#python -m pytest -vv  test_*.py
+	python -m pytest -vv  test_*.py
 
 all: install lint format test
